@@ -17,8 +17,10 @@
 
     <header>
         <nav>
-            <a href="#inicio" class="logo">ÍG.</a>
-
+          <a href="#inicio" class="logo">
+    <span>ÍG.</span>
+    <small>THE PERSONAL CHRONICLE</small>
+</a>
             <ul>
                 <li><a href="#inicio">Início</a></li>
                 <li><a href="#sobre">Sobre</a></li>
@@ -150,3 +152,15 @@
     </footer>
 </body>
 </html>
+.logo {
+    display: flex;
+    flex-direction: column;
+    line-height: 1;
+}
+
+.logo small {
+    margin-top: 5px;
+    color: var(--muted);
+    font-size: 8px;
+    letter-spacing: 2px;
+}

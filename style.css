@@ -448,39 +448,17 @@ footer {
         transform: none;
     }
 }
-/* Tipografia inspirada em Deadlock */
-
-body {
-    font-family: 'Inter', sans-serif;
-}
-
-h1, h2, h3 {
-    font-family: 'Cormorant Garamond', serif;
-    letter-spacing: 1px;
-}
-
-nav, .contact-links, .hero-button {
-    font-family: 'Cinzel', serif;
-    letter-spacing: 1px;
-}
 /* =================================
-   IDENTIDADE TIPOGRÁFICA VINTAGE
+   IDENTIDADE VISUAL DEADLOCK / VINTAGE
    ================================= */
 
-/* Tipografia geral */
-* {
-    font-family: 'Cormorant Garamond', serif;
-}
-
-/* Corpo do site */
 body {
     font-family: 'Cormorant Garamond', serif;
-    font-size: 19px;
+    font-size: 17px;
     letter-spacing: 0.3px;
-    line-height: 1.6;
+    line-height: 1.7;
 }
 
-/* Títulos principais */
 h1, h2, h3, h4, h5, h6 {
     font-family: 'IM Fell English', serif;
     font-weight: 400;
@@ -488,43 +466,157 @@ h1, h2, h3, h4, h5, h6 {
     line-height: 1.2;
 }
 
-/* Navegação */
 nav a,
-.nav-links a {
-    font-family: 'IM Fell English', serif;
-    text-transform: uppercase;
-    letter-spacing: 1.5px;
-}
-
-/* Botões */
 button,
 .hero-button,
 .contact-links a {
     font-family: 'IM Fell English', serif;
-    letter-spacing: 1px;
+    letter-spacing: 1.5px;
     text-transform: uppercase;
 }
 
-/* Pequenos detalhes e etiquetas */
 small,
-.tag,
-.project-category,
-.section-label {
+.eyebrow,
+.section-index,
+.project-number,
+.project-tags {
     font-family: 'Special Elite', serif;
     letter-spacing: 1px;
 }
 
-/* Parágrafos e descrições */
-p,
-li,
-.project-description {
+p, li {
     font-family: 'Cormorant Garamond', serif;
-    font-weight: 500;
-    line-height: 1.65;
+}
+/* =================================
+   DETALHES DE JORNAL ANTIGO
+   ================================= */
+
+/* Textura e iluminação do fundo */
+body {
+    background-image:
+        radial-gradient(
+            ellipse at 50% 0%,
+            rgba(182, 154, 97, 0.055),
+            transparent 65%
+        );
 }
 
-/* Textos de destaque */
-strong,
-b {
-    font-weight: 700;
+/* Cabeçalho */
+header {
+    background: rgba(13, 15, 12, 0.96);
+    border-bottom: 2px solid var(--gold);
+}
+
+.logo {
+    font-family: 'IM Fell English', serif;
+    font-size: 29px;
+    letter-spacing: 2px;
+}
+
+/* Links do menu */
+nav ul a {
+    font-size: 14px;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+nav ul a:hover {
+    color: var(--gold);
+    text-shadow: 0 0 8px rgba(182, 154, 97, 0.4);
+}
+
+/* Apresentação */
+.hero {
+    position: relative;
+}
+
+.hero::after {
+    content: "✦";
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    color: var(--gold);
+    font-size: 18px;
+    opacity: 0.7;
+}
+
+/* Pequeno detalhe acima do título */
+.eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.eyebrow::before,
+.eyebrow::after {
+    content: "";
+    width: 32px;
+    height: 1px;
+    background: var(--gold);
+}
+
+/* Títulos das seções */
+.section-heading h2 {
+    padding-bottom: 15px;
+    border-bottom: 1px solid var(--line);
+}
+
+/* Cards com aparência de documentos antigos */
+.project-card {
+    position: relative;
+    background:
+        linear-gradient(
+            145deg,
+            rgba(182, 154, 97, 0.045),
+            transparent 55%
+        ),
+        var(--surface);
+    border: 1px solid rgba(182, 154, 97, 0.35);
+    outline: 1px solid rgba(182, 154, 97, 0.10);
+    outline-offset: -6px;
+}
+
+.project-card::before {
+    content: "✧";
+    position: absolute;
+    top: 12px;
+    right: 15px;
+    color: var(--gold);
+    opacity: 0.6;
+}
+
+.project-card:hover {
+    border-color: var(--gold);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Habilidades */
+.skill-item {
+    background: rgba(182, 154, 97, 0.025);
+    border-color: rgba(182, 154, 97, 0.28);
+}
+
+.skill-item:hover {
+    background: rgba(182, 154, 97, 0.08);
+    border-color: var(--gold);
+}
+
+/* Botões */
+.hero-button,
+.contact-links a,
+#music-button {
+    border-color: var(--gold);
+    transition: all 0.3s ease;
+}
+
+.hero-button:hover,
+.contact-links a:hover,
+#music-button:hover {
+    box-shadow: 0 0 14px rgba(182, 154, 97, 0.18);
+}
+
+/* Rodapé */
+footer {
+    border-top: 1px solid var(--line);
+    font-family: 'Special Elite', serif;
+    letter-spacing: 1px;
 }
