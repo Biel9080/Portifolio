@@ -245,27 +245,37 @@ section:not(.hero) {
 /* Projetos — estética bronze envelhecido */
 .projects {
     background: #302719;
-    border-top: 1px solid #8D7144;
+    padding: 100px 8%;
+    color: #E5DFCF;
 }
-
 .project-container {
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
     gap: 16px;
 }
 
- .project-card {
+/* CARTÕES DOS PROJETOS */
+
+.project-card {
     display: flex;
     flex-direction: column;
     min-height: 300px;
-    padding: 25px 22px;
+    padding: 30px 25px;
 
-    background: #191710;
-    border: 1px solid #8D7144;
-    outline: 1px solid rgba(182, 154, 97, 0.12);
+    background: #17150F;
+    color: #E5DFCF;
+
+    border: 1px solid #A88950;
+    outline: 1px solid rgba(182, 154, 97, 0.2);
     outline-offset: -6px;
 
     transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    border-color: #D2B477;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
 }
 
 .project-card:hover {
@@ -638,4 +648,33 @@ footer {
     color: var(--muted);
     font-size: 8px;
     letter-spacing: 2px;
+}
+/* DETALHES DOURADOS E TIPOGRAFIA */
+
+.project-card h2,
+.project-card h3 {
+    color: #D2B477;
+}
+
+.project-card p {
+    color: #C5BDA9;
+}
+
+.project-card a {
+    color: #D2B477;
+    text-decoration: none;
+}
+
+.project-card a:visited {
+    color: #D2B477;
+}
+
+.project-card a:hover {
+    color: #F0D9A5;
+    text-decoration: underline;
+}
+
+.project-tags,
+.project-number {
+    color: #B69A61;
 }
