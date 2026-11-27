@@ -242,8 +242,10 @@ section:not(.hero) {
 
 /* Projetos */
 
+/* Projetos — estética bronze envelhecido */
 .projects {
     background: #302719;
+    border-top: 1px solid #8D7144;
 }
 
 .project-container {
@@ -257,9 +259,19 @@ section:not(.hero) {
     flex-direction: column;
     min-height: 300px;
     padding: 25px 22px;
-    background: var(--surface);
-    border: 1px solid rgba(182, 154, 97, 0.2);
-    transition: border-color 0.2s ease, transform 0.2s ease;
+
+    background: #191710;
+    border: 1px solid #8D7144;
+    outline: 1px solid rgba(182, 154, 97, 0.12);
+    outline-offset: -6px;
+
+    transition: all 0.3s ease;
+}
+
+.project-card:hover {
+    border-color: #C4A66A;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
 .project-card:hover {
