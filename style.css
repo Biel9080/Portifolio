@@ -254,7 +254,6 @@ section:not(.hero) {
     gap: 16px;
 }
 
-.project-card {
  .project-card {
     display: flex;
     flex-direction: column;
@@ -273,11 +272,6 @@ section:not(.hero) {
     border-color: #C4A66A;
     transform: translateY(-4px);
     box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-}
-
-.project-card:hover {
-    border-color: rgba(182, 154, 97, 0.55);
-    transform: translateY(-3px);
 }
 
 .project-number {
