@@ -678,3 +678,64 @@ footer {
 .project-number {
     color: #B69A61;
 }
+/* =================================
+   PROJETOS — THE PERSONAL CHRONICLE
+   ================================= */
+
+section.projects {
+    background: #302719;
+    padding: 100px 8%;
+    color: #E5DFCF;
+}
+
+.projects .section-heading h2 {
+    color: #E0C58F;
+    border-bottom: 1px solid #8D7144;
+}
+
+.projects .section-heading p {
+    color: #C5BDA9;
+}
+
+/* Cartões */
+.projects .project-card {
+    background: #17150F;
+    color: #E5DFCF;
+    border: 1px solid #A88950;
+    outline: 1px solid rgba(182, 154, 97, 0.2);
+    outline-offset: -6px;
+}
+
+/* Títulos */
+.projects .project-card h3 {
+    color: #D2B477;
+}
+
+/* Descrições */
+.projects .project-card p {
+    color: #C5BDA9;
+}
+
+/* Numeração e tecnologias */
+.projects .project-number,
+.projects .project-tags {
+    color: #B69A61;
+}
+
+/* Links */
+.projects .project-card a,
+.projects .project-card a:visited {
+    color: #D2B477;
+    border-bottom-color: #A88950;
+}
+
+.projects .project-card a:hover {
+    color: #F0D9A5;
+}
+
+/* Efeito ao passar o mouse */
+.projects .project-card:hover {
+    border-color: #D2B477;
+    transform: translateY(-4px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.35);
+}
