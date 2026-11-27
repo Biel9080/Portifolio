@@ -255,6 +255,7 @@ section:not(.hero) {
 }
 
 .project-card {
+ .project-card {
     display: flex;
     flex-direction: column;
     min-height: 300px;
