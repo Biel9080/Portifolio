@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=IM+Fell+English:ital@0;1&family=Special+Elite&display=swap');
 :root {
     --bg: #10120f;
     --surface: #191d17;
@@ -462,4 +462,69 @@ h1, h2, h3 {
 nav, .contact-links, .hero-button {
     font-family: 'Cinzel', serif;
     letter-spacing: 1px;
+}
+/* =================================
+   IDENTIDADE TIPOGRÁFICA VINTAGE
+   ================================= */
+
+/* Tipografia geral */
+* {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* Corpo do site */
+body {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 19px;
+    letter-spacing: 0.3px;
+    line-height: 1.6;
+}
+
+/* Títulos principais */
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'IM Fell English', serif;
+    font-weight: 400;
+    letter-spacing: 1px;
+    line-height: 1.2;
+}
+
+/* Navegação */
+nav a,
+.nav-links a {
+    font-family: 'IM Fell English', serif;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+/* Botões */
+button,
+.hero-button,
+.contact-links a {
+    font-family: 'IM Fell English', serif;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+/* Pequenos detalhes e etiquetas */
+small,
+.tag,
+.project-category,
+.section-label {
+    font-family: 'Special Elite', serif;
+    letter-spacing: 1px;
+}
+
+/* Parágrafos e descrições */
+p,
+li,
+.project-description {
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 500;
+    line-height: 1.65;
+}
+
+/* Textos de destaque */
+strong,
+b {
+    font-weight: 700;
 }
