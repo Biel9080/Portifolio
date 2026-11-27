@@ -101,7 +101,7 @@ nav ul a:hover {
     background:
         linear-gradient(90deg, rgba(9, 12, 9, 0.94) 0%, rgba(9, 12, 9, 0.72) 47%, rgba(9, 12, 9, 0.16) 100%),
         linear-gradient(0deg, rgba(9, 12, 9, 0.48), transparent 45%),
-        url("assets/images/hero.jfif?v=2") center 42% / cover no-repeat;
+        url("assets/images/hero.jpg?v=3") center 42% / cover no-repeat;
     border-bottom: 1px solid var(--line);
 }
 
